@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette primitives (Light Mode / Editorial Sand Background) */
+  --background: oklch(0.970 0.035 33.3); /* #F6F4EE Elegant Warm Alabaster */
+  --foreground: oklch(0.223 0.004 10.4); /* #1A1B1D Deep Charcoal Slate */
+  
+  --primary: oklch(0.645 0.221 16.4);    /* #F93A3E Vibrant Coral Red Logo */
+  --primary-hover: oklch(0.550 0.210 16.4); /* Deeper Coral Red */
+  
+  --border: oklch(0.895 0.015 33.3);     /* #E3DFD5 Accent border sand color */
+  --muted: oklch(0.450 0.008 33.3);      /* Mid-tone slate for body secondary descriptions */
+  --white: oklch(1.000 0.000 0);         /* Pure white for overlays and cards */
+
+  /* Rounded Corner Tokens */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}
+
+/* For dark context blocks (e.g. Hero banner panels or dark footers) */
+.dark-theme {
+  --background: oklch(0.223 0.004 10.4); /* Deep Charcoal */
+  --foreground: oklch(0.970 0.035 33.3); /* Warm Sand */
+  --border: oklch(0.350 0.008 10.4);     /* Muted Dark Slate border */
+  --muted: oklch(0.650 0.008 33.3);      /* Soft slate text on dark */
+  --white: oklch(0.150 0.004 10.4);      /* Dark panel overlay background */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-border-accent: var(--border);
+  --color-muted-text: var(--muted);
+  --color-card-bg: var(--white);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom smooth transitions */
+.transition-all-custom {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Page line width constraints */
+.prose-container {
+  max-width: 70ch;
+}
+
+/* Custom Cursor styling on desktop viewports (hides default pointer) */
+@media (pointer: fine) {
+  html, body, a, button, select, input, textarea, [role="button"], option {
+    cursor: none !important;
+  }
+}
+
