@@ -101,7 +101,7 @@ export default function Header() {
 
       {/* Mobile Drawer menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[73px] bottom-0 bg-background border-t border-border-accent z-40 flex flex-col justify-between p-8 animate-in fade-in slide-in-from-top-4 duration-200">
+        <div className="lg:hidden fixed inset-x-0 top-[69px] bottom-0 bg-background border-t border-border-accent z-40 flex flex-col justify-between p-8 animate-in fade-in slide-in-from-top-4 duration-200">
           <nav className="flex flex-col gap-6">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
