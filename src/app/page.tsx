@@ -101,7 +101,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 border border-border-accent bg-card-bg/70 px-3.5 py-1 rounded-[4px] self-start shadow-sm">
               <span className="w-1.5 h-1.5 bg-primary rounded-full animate-ping" />
               <span className="text-[10px] font-bold uppercase tracking-widest text-foreground">
-                speculative redesign concept
+                enhancing ageless quality of life
               </span>
             </div>
 
