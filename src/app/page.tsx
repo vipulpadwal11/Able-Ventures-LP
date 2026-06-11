@@ -92,7 +92,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-24 md:gap-36 pb-24 relative overflow-hidden">
       
       {/* 1. Hero Section */}
-      <section className="relative min-h-[85vh] flex flex-col justify-center px-6 pt-12 md:pt-20 max-w-7xl mx-auto w-full">
+      <section className="relative min-h-[85vh] flex flex-col justify-center px-6 pt-8 md:pt-14 max-w-7xl mx-auto w-full">
         {/* Subtle grid background */}
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(#E3DFD5_1px,transparent_1px)] [background-size:32px_32px] opacity-40" />
         

@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <CustomCursor />
         <Header />
-        <main className="flex-grow pt-24 md:pt-28">
+        <main className="flex-grow pt-20 md:pt-24">
           {children}
         </main>
         <Footer />
